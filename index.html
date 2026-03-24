@@ -86,6 +86,23 @@
       z-index: 1;
     }
 
+    .logo-outside {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 10px;
+      transform: translateY(-12px);
+    }
+
+    .top-logo {
+      max-width: 240px;
+      width: 100%;
+      height: auto;
+      display: block;
+      object-fit: contain;
+      filter: drop-shadow(0 8px 20px rgba(0, 0, 0, 0.4));
+    }
+
     .card {
       background: rgba(255, 255, 255, 0.06);
       border: 1px solid rgba(255, 255, 255, 0.1);
@@ -102,6 +119,14 @@
       display: block;
       border-radius: 16px;
       object-fit: cover;
+    }
+
+    .cta-note {
+      margin-top: 14px;
+      margin-bottom: 2px;
+      font-size: 14px;
+      line-height: 1.5;
+      color: #dbeafe;
     }
 
     .btn {
@@ -169,6 +194,19 @@
         border-radius: 18px;
       }
 
+      .logo-outside {
+        margin-bottom: 8px;
+        transform: translateY(-8px);
+      }
+
+      .top-logo {
+        max-width: 190px;
+      }
+
+      .cta-note {
+        font-size: 13px;
+      }
+
       .btn {
         font-size: 15px;
         padding: 14px 18px;
@@ -193,7 +231,7 @@
     "@type": "WebSite",
     "name": "Sultanlulu: Hot News! Info PP & PG Terkini Tahun 2026",
     "url": "https://infosultan.github.io/",
-    "description": "Landing page simple, modern, responsive mobile, dan SEO lengkap untuk GitHub Pages.",
+    "description": "SultanLulu menghadirkan hot news serta info PP & PG terkini tahun 2026 yang dikemas ringkas, mudah dipahami, dan nyaman diakses melalui desktop maupun mobile.",
     "inLanguage": "id-ID"
   }
   </script>
@@ -215,11 +253,16 @@
   </div>
 
   <main class="container">
+    <div class="logo-outside">
+      <img src="https://infosultan.github.io/assets/lulu.gif" alt="Logo SultanLulu" class="top-logo" />
+    </div>
+
     <section class="card">
       <img src="https://infosultan.github.io/assets/goku1.jpg" alt="Foto utama landing page" class="main-image" />
       <p class="cta-note">Klik tombol di bawah untuk masuk ke website dengan lebih cepat.</p>
       <a href="https://goolink.id/sultan-all" class="btn" target="_blank" rel="nofollow noopener">Masuk Sekarang</a>
     </section>
+
     <div class="copyright">© 2026 SultanLulu. All Rights Reserved.</div>
   </main>
 </body>
